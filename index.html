@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="src/p.png">
+        <title>BlackJack</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="main" id="main" style='background-image: url("src/m.jpg");''>
+
+            <div class="up">
+
+                <h1>BlackJack Game</h1>
+                <div class="img"></div>
+
+            </div>
+
+            <div class="in" id="in">
+
+                <p id="par" onpointerenter="change()" onpointerout="change2()">Welcome to BlackJack!</p>
+
+                <div class="mainin" id="mainin">
+
+                    <div class="box" id="a">
+                        
+                        <div class="title">Deck 1</div><br><br>
+                        <p id="upper" class="text">Play</p>
+                        <p id="card" class="text">Cards: </p>
+                        <p id="sum" class="text">Sum: </p><br>
+                        <button onclick="render()" id="but1" class="start">Start Game</button>
+                        <button onclick="newcard()" id="but2" class="new" style="opacity: 1;">Draw New Card</button>
+                        <button onclick="quit()" id="but3" class="quit">Quit Game</button>
+                    
+
+                    </div>
+                        
+                    <div class="box" id="b">
+                        
+                        <div class="title">Deck 2</div><br><br>
+                        <p id="upper2" class="text">Play</p>
+                        <p id="card2" class="text">Cards: </p>
+                        <p id="sum2" class="text">Sum: </p><br>
+                        <button onclick="render2()" id="but4" class="start">Start Game</button>
+                        <button onclick="newcard2()" id="but5" class="new">Draw New Card</button>
+                        <button onclick="quit2()" id="but6" class="quit">Quit Game</button>
+                    
+
+                    </div>
+
+                    <div class="box" id="c">
+                       
+                        <div class="title">Deck 3</div><br><br>
+                        <p id="upper3" class="text">Play</p>
+                        <p id="card3" class="text">Cards: </p>
+                        <p id="sum3" class="text">Sum: </p><br>
+                        <button onclick="render3()" id="but7" class="start">Start Game</button>
+                        <button onclick="newcard3()" id="but8" class="new">Draw New Card</button>
+                        <button onclick="quit3()" id="but9" class="quit">Quit Game</button>
+                    
+
+                    </div>
+
+                    
+
+
+                </div>
+                
+                <div class="bottom">
+                    <div class="got"><span class="prize">You Got: $<span id="prize">0</span></span></div>
+                    <button onclick="reset()" id="reset">Reset</button>
+                    <button onclick="change_background()" id="backbut"><span class="b">Change Background</span></button>
+                    
+                </div>
+                
+        
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </body>
+</html>
